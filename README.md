@@ -41,4 +41,12 @@ To run this project, you need to have a Python environment with the following de
 You can install the required packages using the following command:
 
 ```sh
-pip install jax jaxlib flax numpy torch transformers
+pip install flax numpy torch transformers
+
+## Evaluation
+The evaluation process involves calculating the loss on the validation set to monitor the model's performance. The eval_step function ensures that dropout is appropriately handled, and logits are reshaped for comparison with labels.
+Usage
+- To adapt this project for your specific use case, you may need to:
+- Preprocess your dataset to match the expected input format.
+- Adjust hyperparameters such as the number of layers, dropout rate, and learning rate.
+Implement additional metrics for evaluation, such as BLEU score for translation tasks.
