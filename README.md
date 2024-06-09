@@ -42,10 +42,12 @@ You can install the required packages using the following command:
 
 ```sh
 pip install flax numpy torch transformers
+```
 
 ## Evaluation
 The evaluation process involves calculating the loss on the validation set to monitor the model's performance. The eval_step function ensures that dropout is appropriately handled, and logits are reshaped for comparison with labels.
-Usage
+
+## Usage
 - To adapt this project for your specific use case, you may need to:
 - Preprocess your dataset to match the expected input format.
 - Adjust hyperparameters such as the number of layers, dropout rate, and learning rate.
